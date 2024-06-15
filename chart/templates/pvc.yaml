@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{- include "chart.fullname" . }}-data
+  name: {{ include "chart.fullname" . }}-data
 spec:
   accessModes:
     - ReadWriteOnce
