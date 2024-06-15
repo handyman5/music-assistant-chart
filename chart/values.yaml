@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/music-assistant/server
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  #tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
@@ -42,7 +42,7 @@ securityContext:
 
 service:
   type: NodePort
-#  port: 8095
+  port: 8095
 
 ingress:
   enabled: false
